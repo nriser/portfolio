@@ -4,6 +4,7 @@
   background-color: $sidebar-color;
   border-right: .8vw solid $sub-color;
   height: 100%;
+  width: 25%;
   max-width: 250px;
   padding-left: 0; // remove Bootstrap default
   padding-right: 0; // remove Bootstrap default
@@ -21,10 +22,6 @@
   max-width: 300px;
   position: relative;
 
-}
-
-.main-content {
-  padding-left: 15%;
 }
 
 .hexagon-pic-container {

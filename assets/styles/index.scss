@@ -6,7 +6,8 @@ $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 @import 'modules/mixins';
 
 // Layout
-@import 'layout/grid';
+@import 'layout/flexbox';
 
 // Components
 @import 'components/sidebar';
+@import 'components/main';
