@@ -11,3 +11,6 @@ $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 // Components
 @import 'components/sidebar';
 @import 'components/main';
+
+// Breakpoints
+@import 'layout/breakpoints';

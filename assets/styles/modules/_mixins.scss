@@ -1,34 +1,34 @@
 //////////////////////
 // Sidebar
 /////////////////////
-
+//
 // Stop elements from growing after screen width reaches 1000px. This is necessary as otherwise vw would continue to follow the viewing window forever.
-@mixin max-vw($attr, $value) {
-  #{$attr}: #{$value}vw;
-
-  @media screen and (min-width: 1000px) {
-    #{$attr}: ($value / 100) * 1000px;
-  }
-}
+// @mixin max-vw($attr, $value) {
+//   #{$attr}: #{$value}vw;
+//
+//   @media screen and (min-width: 1000px) {
+//     #{$attr}: ($value / 100) * 1000px;
+//   }
+// }
 
 // Same function as above, but specifically for the transform: translateX attribute/value pair.
-@mixin max-vw2($attr, $value) {
-  #{$attr}: translateX(#{$value}vw);
-
-  @media screen and (min-width: 1000px) {
-    #{$attr}: translateX(($value / 100) * 1000px);
-  }
-}
+// @mixin max-vw2($attr, $value) {
+//   #{$attr}: translateX(#{$value}vw);
+//
+//   @media screen and (min-width: 1000px) {
+//     #{$attr}: translateX(($value / 100) * 1000px);
+//   }
+// }
 
 //////////////////////
 // Main Content
 /////////////////////
 
 // Stop
-@mixin fix-padding-main($attr, $value) {
-  #{$attr}: #{$value}vw;
-
-  @media screen and (min-width: 1000px) {
-    #{$attr}: $value * 10px;
-  }
-}
+// @mixin fix-padding-main($attr, $value) {
+//   #{$attr}: #{$value}vw;
+//
+//   @media screen and (min-width: 1000px) {
+//     #{$attr}: $value * 10px;
+//   }
+// }

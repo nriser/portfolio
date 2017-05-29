@@ -1,14 +1,14 @@
 .sidebar {
   // border: 2px solid yellow;
-  @include max-vw(border-right-width, .035 * $pic-length);
   background-color: $sidebar-color;
   border-right: .8vw solid $sub-color;
+  border-right-width: #{.035 * $pic-length}vw;
   height: 100%;
-  width: 25%;
   max-width: 250px;
   padding-left: 0; // remove Bootstrap default
   padding-right: 0; // remove Bootstrap default
   position: fixed;
+  width: 25%;
 }
 
 .profile-pic-container {
@@ -16,46 +16,45 @@
 }
 
 .profile-pic {
-  @include max-vw(width, $pic-length);
-  @include max-vw(height, $pic-length);
-  @include max-vw2(transform, 24.3 - ($pic-length / 2));
+  height: #{$pic-length}vw;
   max-width: 300px;
   position: relative;
-
+  transform: translateX(#{24.3 - ($pic-length / 2)}vw);
+  width: #{$pic-length}vw;
 }
 
 .hexagon-pic-container {
-  @include max-vw(width, $pic-length);
-  @include max-vw(height, $pic-length);
+  height: #{$pic-length}vw;
   position: relative;
+  width: #{$pic-length}vw;
 }
 
 .hexagon {
-  @include max-vw(width, 1.732 / 2 * $pic-length / 2);
-  @include max-vw(height, $pic-length / 2);
-  @include max-vw(top, $pic-length / 4);
-  @include max-vw(left, 24.4);
   background-color: $sub-color;
   display: inline-block;
+  height: #{$pic-length / 2}vw;
+  left: 24.4vw;
   position: absolute;
+  top: #{$pic-length / 4}vw;
+  width: #{(1.732 / 2) * ($pic-length / 2)}vw;
 }
 
 .hexagon::before,
 .hexagon::after {
-  @include max-vw(border-right-width, 1.732 / 2 * $pic-length / 2);
   border-right: 1.732 / 2 * 20vw / 2 solid transparent;
+  border-right-width: #{(1.732 / 2) * ($pic-length / 2)}vw;
   content: '';
   position: absolute;
 }
 
 .hexagon::before {
-  @include max-vw(border-bottom-width, $pic-length / 4);
   border-bottom: 5vw solid $sub-color;
+  border-bottom-width: #{$pic-length / 4}vw;
   bottom: 100%;
 }
 
 .hexagon::after {
-  @include max-vw(border-top-width, $pic-length / 4);
+  border-top-width: #{$pic-length / 4}vw;
   border-top: 5vw solid $sub-color;
   top: 100%;
 }

@@ -1,0 +1,64 @@
+@import 'layout/breakpoint';
+
+//////////////////
+// Sidebar
+//////////////////
+
+.sidebar {
+  @include breakpoint(large) {
+    border-right-width: ((.035 * $pic-length) / 100) * 1000px;
+  }
+}
+
+.profile-pic {
+  @include breakpoint(large) {
+    height: ($pic-length / 100) * 1000px;
+    transform: translateX(((24.3 - ($pic-length / 2)) / 100) * 1000px);
+    width: ($pic-length / 100) * 1000px;
+  }
+}
+
+.hexagon-pic-container {
+  @include breakpoint(large) {
+    height: ($pic-length / 100) * 1000px;
+    width: ($pic-length / 100) * 1000px;
+  }
+}
+
+.hexagon {
+  @include breakpoint(large) {
+    height: (($pic-length / 2) / 100) * 1000px;
+    left: (24.4 / 100) * 1000px;
+    top: (($pic-length / 4) / 100) * 1000px;
+    width: (((1.732 / 2) * ($pic-length / 2)) / 100) * 1000px;
+  }
+}
+
+.hexagon::before,
+.hexagon::after {
+  @include breakpoint(large) {
+    border-right-width: (((1.732 / 2) * ($pic-length / 2)) / 100) * 1000px;
+  }
+}
+
+.hexagon::before {
+  @include breakpoint(large) {
+    border-bottom-width: (($pic-length / 4) / 100) * 1000px;
+  }
+}
+
+.hexagon::after {
+  @include breakpoint(large) {
+    border-top-width: (($pic-length / 4) / 100) * 1000px;
+  }
+}
+
+//////////////////
+// Main content
+//////////////////
+
+.main-content {
+  @include breakpoint(large) {
+    padding-left: 370px;
+  }
+}
