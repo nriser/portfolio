@@ -1,2 +1,31 @@
 $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 @import '~bootstrap-sass/assets/stylesheets/bootstrap';
+
+.row {
+  height: 100%;
+  // border: 2px solid red;
+}
+
+.sidebar {
+  // border: 2px solid yellow;
+  background-color: pink;
+  height: 100%;
+  max-width: 250px;
+  padding-left: 0; // remove Bootstrap default
+  padding-right: 0; // remove Bootstrap default
+  position: fixed;
+}
+
+.profile-pic-container {
+  position: relative;
+}
+
+.profile-pic {
+  max-width: 300px;
+  position: relative;
+
+}
+
+.main-content {
+  padding-left: 15%;
+}
