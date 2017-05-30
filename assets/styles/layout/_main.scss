@@ -2,3 +2,19 @@
   // border: 2px solid red;
   padding-left: 37vw;
 }
+
+.project {
+  // border: 2px solid green;
+  align-content: space-between;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 93%;
+  // max-width: 1200px;
+}
+
+.project-info { // flexbox child
+  // border: 2px solid blue;
+  text-align: justify;
+  width: 38%;
+}

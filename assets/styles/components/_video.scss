@@ -3,14 +3,13 @@
 //   // margin: 0 auto;
 // }
 
-
-.video-container {
+.video-container { // flexbox child
   // border: 2px solid red;
   height: 50%;
-  margin: 0 auto;
+  // margin: 0 auto;
   max-height: 543px;
   max-width: 1034px;
-  width: 50%;
+  width: 58%;
 }
 
 .video-wrapper {
@@ -28,7 +27,7 @@
   box-sizing: border-box;
   height: 100%;
   left: 0;
-  padding: 7.6% 15.2% 14.8%; // top, left/right, bottom
+  padding: 7.6% 15.5% 14.8%; // top, left/right, bottom
   position: absolute;
   top: 0;
   width: 100%;
