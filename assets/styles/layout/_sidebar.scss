@@ -1,0 +1,60 @@
+.sidebar {
+  // border: 2px solid yellow;
+  background-color: $sidebar-color;
+  border-right: .8vw solid $sub-color;
+  border-right-width: #{.035 * $pic-length}vw;
+  height: 100%;
+  max-width: 250px;
+  padding-left: 0; // remove Bootstrap default
+  padding-right: 0; // remove Bootstrap default
+  position: fixed;
+  width: 25%;
+}
+
+.profile-pic-container {
+  position: relative;
+}
+
+.profile-pic {
+  height: #{$pic-length}vw;
+  max-width: 300px;
+  position: relative;
+  transform: translateX(#{24.3 - ($pic-length / 2)}vw);
+  width: #{$pic-length}vw;
+}
+
+.hexagon-pic-container {
+  height: #{$pic-length}vw;
+  position: relative;
+  width: #{$pic-length}vw;
+}
+
+.hexagon {
+  background-color: $sub-color;
+  display: inline-block;
+  height: #{$pic-length / 2}vw;
+  left: 24.4vw;
+  position: absolute;
+  top: #{$pic-length / 4}vw;
+  width: #{(1.732 / 2) * ($pic-length / 2)}vw;
+}
+
+.hexagon::before,
+.hexagon::after {
+  border-right: 1.732 / 2 * 20vw / 2 solid transparent;
+  border-right-width: #{(1.732 / 2) * ($pic-length / 2)}vw;
+  content: '';
+  position: absolute;
+}
+
+.hexagon::before {
+  border-bottom: 5vw solid $sub-color;
+  border-bottom-width: #{$pic-length / 4}vw;
+  bottom: 100%;
+}
+
+.hexagon::after {
+  border-top-width: #{$pic-length / 4}vw;
+  border-top: 5vw solid $sub-color;
+  top: 100%;
+}

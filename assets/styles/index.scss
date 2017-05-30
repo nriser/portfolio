@@ -7,10 +7,11 @@ $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 
 // Layout
 @import 'layout/flexbox';
+@import 'layout/sidebar';
+@import 'layout/main';
 
 // Components
-@import 'components/sidebar';
-@import 'components/main';
+@import 'components/video';
 
 // Breakpoints
 @import 'layout/breakpoints';
