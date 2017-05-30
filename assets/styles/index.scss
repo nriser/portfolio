@@ -1,9 +1,11 @@
 $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 @import '~bootstrap-sass/assets/stylesheets/bootstrap';
+@import url('https://fonts.googleapis.com/css?family=Unica+One|Raleway:400,500,700|Roboto:400,500|Dosis:400,500,600,700');
 
 // Modules
 @import 'modules/variables';
 @import 'modules/mixins';
+@import 'modules/typography';
 
 // Layout
 @import 'layout/flexbox';
@@ -15,3 +17,7 @@ $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 
 // Breakpoints
 @import 'layout/breakpoints';
+
+// * {
+//   border: 1px solid red;
+// }
