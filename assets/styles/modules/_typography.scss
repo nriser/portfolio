@@ -70,6 +70,12 @@ p {
 a {
   text-transform: uppercase;
   font-family: 'Raleway', sans-serif;
+  letter-spacing: 3px;
+  font-weight: 500;
+}
+
+a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
 }
 
 span.white {
