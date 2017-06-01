@@ -1,5 +1,4 @@
 .sidebar {
-  // border: 2px solid yellow;
   background-color: $sidebar-color;
   border-right: .8vw solid $sub-color;
   border-right-width: #{.035 * $pic-length}vw;
@@ -68,11 +67,26 @@
 
 .icons {
   padding: 20px 0;
-  margin: auto;
+  margin: 0 auto 40px auto;
   width: 65%;
   text-align: center;
   align-content: space-between;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.copyright {
+  height: 60px;
+  align-content: space-between;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.copyright p {
+  color: #6D4C5F;
+  font-size: .9em;
+  margin: 0;
+  text-align: center;
 }
