@@ -6,7 +6,6 @@ nav ul {
 	font-size: 1em;
   padding: 0;
   // padding: 50px 0 50px 0;
-
   align-content: space-between;
   display: flex;
   flex-direction: column;
@@ -34,5 +33,5 @@ nav ul li a {
 nav ul li a:hover {
 	color: #fff;
 	background-color: #6D4C5F;
-	border: 1px solid #fff;
+	border: 2px solid #fff;
 }
