@@ -1,15 +1,9 @@
-.main-content {
-  // border: 2px solid red;
-  padding-left: 37vw;
-  width: 100%;
-}
-
 .about-section {
   margin: 50px 0 160px 0;
 }
 
 .about-section .about .intro {
-  width: 100%;
+  width: 850px;
   margin: 0px auto 100px auto;
   line-height: 1.4em;
 }
@@ -20,7 +14,34 @@
 }
 
  .about-section .skills {
-  margin-bottom: 40px;
+  margin-bottom: 70px;
+}
+
+ .about-section .resume-container .resume {
+   border: 2px solid #6D4C5F;
+   padding: 10px 40px;
+   color: #6D4C5F;
+   transition: background-color .5s;
+   transition: color .5s;
+   transition: border .5s;
+   width: 20%;
+   text-align: center;
+ }
+
+.about-section .resume-container .resume:hover {
+  color: #fff;
+  background-color: #6D4C5F;
+  border: 2px solid #fff;
+ }
+
+.skills span {
+ background-color: #6D4C5F;
+ color: #fff;
+ font-size: .8em;
+ padding: 8px;
+ text-transform: uppercase;
+ display: inline-block;
+ margin: 2px 0;
 }
 
 .project {
