@@ -1,0 +1,28 @@
+.two-tone-btn {
+  background: #212531;
+  background: linear-gradient(to right bottom, #9a6e87 50%,
+#aa859a 50%);
+  display: inline-block;
+  padding: 0.75em 2.0em;
+  display: block;
+  // font-size:1.5em;
+  text-align: center;
+  margin: 0.25em 0;
+  color: #fff;
+  font-weight: normal;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  transition: background .5s;
+  transition: color .5s;
+}
+
+.two-tone-btn:hover, .two-tone-btn:focus {
+  background: linear-gradient(to right bottom, #6D4C5F 50%,
+  #9a6e87 50%);
+  color: #fff;
+}
+
+.about-section .resume-container .resume {
+  padding: 10px 40px;
+  width: 20%;
+}

@@ -5,7 +5,6 @@ nav ul {
   list-style: none;
 	font-size: 1em;
   padding: 0;
-  // padding: 50px 0 50px 0;
   align-content: space-between;
   display: flex;
   flex-direction: column;
@@ -14,24 +13,6 @@ nav ul {
 
 nav ul li {
   margin: auto;
-  // border: 2px solid green;
   text-align: center;
   width: 70%;
-}
-
-nav ul li a {
-  border: 2px solid #6D4C5F;
-  color: #6D4C5F;
-  padding: 10px 0;
-  display: block;
-  // width: 100%;
-  transition: background-color .5s;
-	transition: color .5s;
-	transition: border .5s;
-}
-
-nav ul li a:hover {
-	color: #fff;
-	background-color: #6D4C5F;
-	border: 2px solid #fff;
 }
