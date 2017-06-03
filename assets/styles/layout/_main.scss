@@ -4,6 +4,25 @@
   padding-left: 37vw;
 }
 
+.about-section {
+  margin: 50px 0 160px 0;
+}
+
+.about-section .about .intro {
+  width: 100%;
+  margin: 0px auto 100px auto;
+  line-height: 1.4em;
+}
+
+ .about-section .about .summary {
+  margin-bottom: 40px;
+  font-size: 1.1em;
+}
+
+ .about-section .skills {
+  margin-bottom: 40px;
+}
+
 .project {
   // border: 2px solid green;
   align-content: space-between;
