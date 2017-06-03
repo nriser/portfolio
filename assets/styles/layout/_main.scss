@@ -1,6 +1,7 @@
 @import "components/buttons";
 
 .main-content {
+  // border: 2px solid red;
   padding-left: 37vw;
   width: 100%;
 }
@@ -25,23 +26,36 @@
 }
 
 .skills span {
- background-color: #6D4C5F;
- color: #fff;
- font-size: .8em;
- padding: 8px;
- text-transform: uppercase;
- display: inline-block;
- margin: 2px 0;
+   background-color: #6D4C5F;
+   color: #fff;
+   font-size: .8em;
+   padding: 8px;
+   text-transform: uppercase;
+   display: inline-block;
+   margin: 2px 0;
+}
+
+.project-section {
+  // border: 2px solid blue;
+  align-content: space-between;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .project {
+  margin-bottom: 140px;
   // border: 2px solid green;
   align-content: space-between;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 93%;
-  // max-width: 1200px;
+  width: 100%;
+}
+
+.project-section .project:last-child {
+  // border: 2px solid purple;
+  margin-bottom: 0;
 }
 
 .project-info { // flexbox child
