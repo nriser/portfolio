@@ -1,13 +1,13 @@
 @import "components/buttons";
 
 .main-content {
-  // border: 2px solid red;
   padding-left: 37vw;
   width: 100%;
 }
 
 .about-section {
-  margin: 50px 0 160px 0;
+  margin-top: 50px;
+  margin-bottom: 160px;
 }
 
 .about-section .about .intro {
@@ -36,7 +36,6 @@
 }
 
 .project-section {
-  // border: 2px solid blue;
   align-content: space-between;
   display: flex;
   flex-direction: column;
@@ -45,7 +44,6 @@
 
 .project {
   margin-bottom: 140px;
-  // border: 2px solid green;
   align-content: space-between;
   display: flex;
   flex-direction: row;
@@ -54,12 +52,10 @@
 }
 
 .project-section .project:last-child {
-  // border: 2px solid purple;
   margin-bottom: 0;
 }
 
 .project-info { // flexbox child
-  // border: 2px solid blue;
   text-align: justify;
   width: 38%;
 }

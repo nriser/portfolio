@@ -1,24 +1,22 @@
 .two-tone-btn {
-  background: #212531;
-  background: linear-gradient(to right bottom, #9a6e87 50%,
+  background: linear-gradient(to right bottom, #8b6179 50%,
 #aa859a 50%);
-  display: inline-block;
   padding: 0.75em 2.0em;
   display: block;
-  // font-size:1.5em;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
   text-align: center;
   margin: 0.25em 0;
   color: #fff;
+  outline: 2px solid transparent;
   font-weight: normal;
   text-transform: uppercase;
   font-family: sans-serif;
-  transition: background .5s;
-  transition: color .5s;
+  transition: outline .5s, color .5s;
 }
 
 .two-tone-btn:hover, .two-tone-btn:focus {
-  background: linear-gradient(to right bottom, #6D4C5F 50%,
-  #9a6e87 50%);
+  background: linear-gradient(to right bottom, #6d4c5f 50%, #996d86 50%);
+  outline: 2px solid #fff;
   color: #fff;
 }
 
@@ -29,4 +27,12 @@
 
 .project-btn {
   width: 40%;
+}
+
+.sidebar-middle a {
+}
+
+.sidebar-middle a.nav-active {
+  background: linear-gradient(to right bottom, rgba(109,76,95,1) 50%, rgba(154,110,135,1) 50%);
+  outline: 2px solid #fff;
 }
