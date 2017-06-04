@@ -1,0 +1,14 @@
+// change font-awesome default styling
+
+.fa {
+  /* custom styling */
+  font-size: 25px;
+  color: #6D4C5F;
+  transition: color .5s;
+}
+
+/* custom hover effect */
+.fa:hover {
+  font-size: 25px;
+  color: #fff;
+}
