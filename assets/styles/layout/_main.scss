@@ -63,3 +63,11 @@
   text-align: justify;
   width: 38%;
 }
+
+.project-actions {
+  align-content: space-between;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: auto;
+}
