@@ -5,6 +5,7 @@ const config = require('./config')
 
 $(() => {
   setAPIOrigin(location, config)
+  setSmoothScroll()
   highlightNavOnScroll()
 })
 
@@ -13,6 +14,19 @@ $(() => {
 
 // use require without a reference to ensure a file is bundled
 require('./example')
+
+const setSmoothScroll = function () {
+  /**
+   * This part causes smooth scrolling using scrollto.js
+   * We target all a tags inside the nav, and apply the scrollto.js to it.
+   */
+  $('.sidebar-middle a').click(function (evn) {
+      // evn.preventDefault();
+    $('html,body').animate({
+      scrollTop: $(this.hash).offset().top
+    }, 1000)
+  })
+}
 
 const highlightNavOnScroll = function () {
   /**
