@@ -1,3 +1,5 @@
+@import 'components/navigation';
+
 .sidebar {
   background-color: $sidebar-color;
   border-right: .8vw solid $sub-color;
@@ -6,15 +8,23 @@
   max-width: 250px;
   position: fixed;
   width: 25%;
+
+  align-content: space-between;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .sidebar-header {
   text-align: center;
+  height: auto;
+  margin-top: 10px;
 }
 
 .sidebar-header h1 {
   padding-left: 6%;
-  padding-top: 50px;
+  height: 100%;
+  margin: 0;
 }
 
 .profile-pic-container {
@@ -30,7 +40,7 @@
 }
 
 .hexagon-pic-container {
-  height: #{$pic-length}vw;
+  height: 30vh;
   position: relative;
   width: #{$pic-length}vw;
 }
@@ -66,22 +76,21 @@
 }
 
 .icons {
-  padding: 20px 0;
   margin: 0 auto 40px auto;
-  width: 65%;
+  height: 30px;
+  width: 100%;
   text-align: center;
-  align-content: space-between;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+}
+
+.icons i {
+  margin-right: 15%;
+}
+
+.icons i:last-child {
+  margin-right: 0;
 }
 
 .copyright {
-  height: 60px;
-  align-content: space-between;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 
 .copyright p {

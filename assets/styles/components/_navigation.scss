@@ -1,18 +1,29 @@
-nav ul {
-  // border: 2px solid blue;
-  margin-top: 40px;
-  height: 150px;
+.sidebar-top {
+}
+
+.sidebar-bottom {
+  margin-bottom: 30px;
+}
+
+.sidebar-middle {
+  margin-bottom: 30px;
+  height: 120px;
+}
+
+.sidebar-middle ul {
   list-style: none;
+  height: 100%;
 	font-size: 1em;
   padding: 0;
   align-content: space-between;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin-bottom: 0;
 }
 
-nav ul li {
-  margin: auto;
+.sidebar-middle ul li {
+  margin: 0 auto;
   text-align: center;
   width: 70%;
 }
