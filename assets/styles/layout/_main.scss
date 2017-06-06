@@ -38,17 +38,18 @@
 .project-section {
   align-content: space-between;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .project {
   margin-bottom: 140px;
   align-content: space-between;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
-  width: 100%;
+  width: 42%;
 }
 
 .project-section .project:last-child {
@@ -57,7 +58,6 @@
 
 .project-info { // flexbox child
   text-align: justify;
-  width: 38%;
 }
 
 .project-sub-info {
