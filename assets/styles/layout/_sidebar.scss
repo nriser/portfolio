@@ -27,6 +27,7 @@
   padding-left: 6%;
   height: 100%;
   margin: 0;
+  color: $sidebar-header-color;
 }
 
 .profile-pic-container {
@@ -96,7 +97,7 @@
 }
 
 .copyright p {
-  color: #6D4C5F;
+  color: $copyright-color;
   font-size: .9em;
   margin: 0;
   text-align: center;

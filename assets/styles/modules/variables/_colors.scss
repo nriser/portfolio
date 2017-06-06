@@ -1,0 +1,52 @@
+/////////////////////////////////////////////
+// color opacity
+/////////////////////////////////////////////
+
+$opacity-very-light: .3;
+$opacity-light: .8;
+$opacity-opaque: 1;
+
+/////////////////////////////////////////////
+// colors: lightest to darkest (approx.)
+/////////////////////////////////////////////
+
+$color-white: #fff;
+$color-white-pointer: #fefbff;
+$color-gallery: #eeeeee;
+$color-old-rose: #bf7d7d;
+$color-coral-tree: #b2766f;
+$color-coral-tree-rgba-light: rgba(178,118,111,$opacity-light);
+$color-coral-tree-rgba-opaque: rgba(178,118,111,$opacity-opaque);
+$color-au-chico: #8a5a5a;
+$color-au-chico-rgba: rgba(138,90,90,.9);
+$color-au-chico-rgba-light: rgba(138,90,90,$opacity-light);
+$color-au-chico-rgba-opaque: rgba(138,90,90,$opacity-opaque);
+$color-roman-coffee: #805a54;
+$color-sycamore: #7d8240;
+$color-sycamore-rgba: rgba(125,130,64,$opacity-very-light);
+$color-scorpion: #606060;
+
+/////////////////////////////////////////////
+// elements
+/////////////////////////////////////////////
+
+// sidebar
+$sidebar-color: $color-sycamore-rgba;
+$sub-color: $color-white;
+$copyright-color: $color-au-chico;
+$sidebar-header-color: $color-white;
+
+// main content
+$main-content-color: $color-white-pointer;
+$quotation-color: $color-gallery;
+$heading-color: $color-roman-coffee;
+$about-header-color: $color-gallery;
+$skills: $color-au-chico;
+$icon-color: $color-au-chico;
+$icon-hover-color: $color-old-rose;
+
+// link/button component
+$diagonal-btn-topleft-color: $color-au-chico-rgba-light;
+$diagonal-btn-bottomright-color: $color-coral-tree-rgba-light;
+$diagonal-btn-hover-topleft-color: $color-au-chico-rgba-opaque;
+$diagonal-btn-hover-bottomright-color: $color-coral-tree-rgba-opaque;

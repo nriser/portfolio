@@ -3,7 +3,7 @@ $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 @import url('https://fonts.googleapis.com/css?family=Unica+One|Raleway:400,500,700|Roboto:400,500|Dosis:400,500,600,700');
 
 // Modules
-@import 'modules/variables';
+@import 'modules/variables/variables-all';
 @import 'modules/mixins';
 @import 'modules/typography';
 

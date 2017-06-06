@@ -1,12 +1,11 @@
 .two-tone-btn {
-  background: linear-gradient(to right bottom, #8b6179 50%,
-#aa859a 50%);
+  background: linear-gradient(to right bottom, $diagonal-btn-topleft-color 50%, $diagonal-btn-bottomright-color 50%);
   padding: 0.75em 2.0em;
   display: block;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
   text-align: center;
   margin: 0.25em 0;
-  color: #fff;
+  color: $color-white;
   outline: 2px solid transparent;
   font-weight: normal;
   text-transform: uppercase;
@@ -15,9 +14,10 @@
 }
 
 .two-tone-btn:hover, .two-tone-btn:focus {
-  background: linear-gradient(to right bottom, #6d4c5f 50%, #996d86 50%);
-  outline: 2px solid #fff;
-  color: #fff;
+  background: linear-gradient(to right bottom, $diagonal-btn-hover-topleft-color 50%, $diagonal-btn-hover-bottomright-color 50%);
+  color: $color-white;
+  border: none;
+  outline: none;
 }
 
 .about-section .resume-container .resume {
@@ -34,6 +34,5 @@
 }
 
 .sidebar-middle a.nav-active {
-  background: linear-gradient(to right bottom, rgba(109,76,95,1) 50%, rgba(154,110,135,1) 50%);
-  outline: 2px solid #fff;
+  outline: 2px solid $color-white;
 }

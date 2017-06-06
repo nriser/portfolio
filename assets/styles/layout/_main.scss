@@ -12,15 +12,9 @@
 }
 
 .about-section .about-header {
-  // border: 2px solid blue;
-  // position: absolute;
-  // top: -100px;
-  // left: 50%;
-  // transform: translateX(-50%);
-  // margin: auto;
   margin-bottom: 20px;
   font-size: 4em;
-  color: #eeeeee;
+  color: $about-header-color;
 }
 
 .about-section .about .intro {
@@ -28,7 +22,7 @@
   font-family: 'Dosis', sans-serif;
   font-weight: 600;
   letter-spacing: 3px;
-  color: #6D4C5F;
+  color: $heading-color;
   text-transform: uppercase;
   margin: 0 0 0.5em;
   font-size: 2.3em;
@@ -42,7 +36,7 @@
 
 .about-section .about .intro::before {
   content: "\201C";
-  color: #eeeeee;
+  color: $quotation-color;
   font-family: Georgia;
   font-size: 200px;
   position: absolute;
@@ -53,7 +47,7 @@
 
 .about-section .about .intro::after {
   content: "\201D";
-  color: #eeeeee;
+  color: $quotation-color;
   font-family: Georgia;
   font-size: 200px;
   position: absolute;
@@ -78,8 +72,8 @@
 }
 
 .skills span {
-   background-color: #6D4C5F;
-   color: #fff;
+   background-color: $skills;
+   color: $color-white;
    font-size: .8em;
    padding: 8px;
    text-transform: uppercase;
@@ -110,7 +104,7 @@
 .project-header {
   margin-bottom: 20px;
   font-size: 4em;
-  color: #eeeeee;
+  color: $color-gallery;
 }
 
 .project-section .project:last-child {

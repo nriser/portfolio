@@ -3,12 +3,12 @@
 .fa {
   /* custom styling */
   font-size: 25px;
-  color: #6D4C5F;
+  color: $icon-color;
   transition: color .5s;
 }
 
 /* custom hover effect */
 .fa:hover {
   font-size: 25px;
-  color: #fff;
+  color: $icon-hover-color;
 }
