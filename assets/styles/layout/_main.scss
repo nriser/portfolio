@@ -8,6 +8,19 @@
 .about-section {
   margin-top: 100px;
   margin-bottom: 160px;
+  position: relative;
+}
+
+.about-section .about-header {
+  // border: 2px solid blue;
+  // position: absolute;
+  // top: -100px;
+  // left: 50%;
+  // transform: translateX(-50%);
+  // margin: auto;
+  margin-bottom: 20px;
+  font-size: 4em;
+  color: #eeeeee;
 }
 
 .about-section .about .intro {
@@ -75,6 +88,9 @@
 }
 
 .project-section {
+}
+
+.project-section .projects-all {
   align-content: space-between;
   display: flex;
   flex-direction: row;
@@ -82,13 +98,19 @@
   flex-wrap: wrap;
 }
 
-.project {
+.project-section .project {
   margin-bottom: 140px;
   align-content: space-between;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   width: 42%;
+}
+
+.project-header {
+  margin-bottom: 20px;
+  font-size: 4em;
+  color: #eeeeee;
 }
 
 .project-section .project:last-child {
