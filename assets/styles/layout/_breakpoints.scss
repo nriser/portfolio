@@ -62,3 +62,24 @@
     padding-left: 370px;
   }
 }
+
+.project-section .projects-all {
+  @include breakpoint(extra-large) {
+    flex-direction: column;
+  }
+}
+
+.project-section .project {
+  @include breakpoint(extra-large) {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+}
+
+.video-container {
+  @include breakpoint(extra-large) {
+    margin: auto;
+    width: 70%;
+  }
+}
