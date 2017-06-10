@@ -3,7 +3,7 @@
 //   // margin: 0 auto;
 // }
 
-.video-container { // flexbox child
+.media-container { // flexbox child
   // border: 2px solid red;
   height: 50%;
   // margin: 0 auto;
@@ -12,7 +12,7 @@
   width: 100%;
 }
 
-.video-wrapper {
+.media-wrapper {
   // border: 2px solid yellow;
   // height: 0;
   padding-bottom: 67.5%;
@@ -20,7 +20,7 @@
   position: relative;
 }
 
-.video-macbook {
+.media-macbook {
   background: url(../../assets/images/macbook.png) center center no-repeat;
   background-size: contain;
   // border: 2px solid blue;
