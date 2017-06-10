@@ -1,5 +1,6 @@
 @import "components/buttons";
 @import "components/modals";
+@import 'components/media';
 
 .main-content {
   padding-left: 37vw;
@@ -91,10 +92,13 @@
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .project-section .project {
-  margin-bottom: 140px;
+  margin-bottom: 155px;
   align-content: space-between;
   display: flex;
   flex-direction: column;
@@ -103,7 +107,7 @@
 }
 
 .project-header {
-  margin-bottom: 20px;
+  margin-bottom: 60px;
   font-size: 4em;
   color: $color-gallery;
 }
