@@ -87,6 +87,7 @@
 }
 
 .project-section .projects-all {
+  // border: 2px solid red;
   align-content: space-between;
   display: flex;
   flex-direction: row;
@@ -98,7 +99,9 @@
 }
 
 .project-section .project {
-  margin-bottom: 155px;
+  position: relative;
+  // border: 2px solid blue;
+  margin-bottom: 190px;
   align-content: space-between;
   display: flex;
   flex-direction: column;
@@ -113,7 +116,7 @@
 }
 
 .project-section .project:last-child {
-  margin-bottom: 0;
+  margin-bottom: 130px;
 }
 
 .project-info { // flexbox child
@@ -126,9 +129,12 @@
 }
 
 .project-actions {
+  position: absolute;
+  bottom: -60px;
   align-content: space-between;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   height: auto;
+  width: 100%;
 }
