@@ -5,13 +5,13 @@
 //////////////////
 
 .sidebar {
-  @include breakpoint(large) {
+  @include breakpoint(min-large) {
     border-right-width: ((.035 * $pic-length) / 100) * 1000px;
   }
 }
 
 .profile-pic {
-  @include breakpoint(large) {
+  @include breakpoint(min-large) {
     height: ($pic-length / 100) * 1000px;
     transform: translateX(((24.3 - ($pic-length / 2)) / 100) * 1000px);
     width: ($pic-length / 100) * 1000px;
@@ -19,14 +19,14 @@
 }
 
 .hexagon-pic-container {
-  @include breakpoint(large) {
+  @include breakpoint(min-large) {
     height: ($pic-length / 100) * 1000px;
     width: ($pic-length / 100) * 1000px;
   }
 }
 
 .hexagon {
-  @include breakpoint(large) {
+  @include breakpoint(min-large) {
     height: (($pic-length / 2) / 100) * 1000px;
     left: (24.4 / 100) * 1000px;
     top: (($pic-length / 4) / 100) * 1000px;
@@ -36,19 +36,19 @@
 
 .hexagon::before,
 .hexagon::after {
-  @include breakpoint(large) {
+  @include breakpoint(min-large) {
     border-right-width: (((1.732 / 2) * ($pic-length / 2)) / 100) * 1000px;
   }
 }
 
 .hexagon::before {
-  @include breakpoint(large) {
+  @include breakpoint(min-large) {
     border-bottom-width: (($pic-length / 4) / 100) * 1000px;
   }
 }
 
 .hexagon::after {
-  @include breakpoint(large) {
+  @include breakpoint(min-large) {
     border-top-width: (($pic-length / 4) / 100) * 1000px;
   }
 }
@@ -58,20 +58,55 @@
 //////////////////
 
 .main-content {
-  @include breakpoint(large) {
+  @include breakpoint(min-large) {
     padding-left: 370px;
   }
 }
 
+.about-intro-container {
+  @include breakpoint(min-large) {
+  }
+}
+
 .about-intro-quotation {
-  @include breakpoint(extra-large) {
-    width: 640px;
-    top: -25%;
+  @include breakpoint(max-extra-large) {
+    width: 600px;
+    top: 0%;
+  }
+  @include breakpoint(max-large) {
+    width: 300px;
+    text-align: center;
+  }
+}
+
+.about-intro-quotation::before {
+  @include breakpoint(max-extra-large) {
+    font-size: 150px;
+  }
+  @include breakpoint(max-large) {
+    top: -50px;
+    font-size: 250px
+  }
+}
+
+.about-intro-quotation::after {
+  @include breakpoint(max-extra-large) {
+    font-size: 150px;
+  }
+  @include breakpoint(max-large) {
+    top: -50px;
+    font-size: 250px;
+  }
+}
+
+.about-section .about .intro {
+  @include breakpoint(max-large) {
+    text-align: center;
   }
 }
 
 .project-section .project {
-  @include breakpoint(extra-large) {
+  @include breakpoint(max-extra-large) {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
@@ -79,14 +114,14 @@
 }
 
 .project-section .projects-all {
-  @include breakpoint(extra-large) {
+  @include breakpoint(max-extra-large) {
     flex-direction: column;
     // border: 2px solid red;
   }
 }
 
 .media-container {
-  @include breakpoint(extra-large) {
+  @include breakpoint(max-extra-large) {
     margin-left: auto;
     margin-right: auto;
     width: 70%;
@@ -98,7 +133,7 @@
 //////////////////
 
 body {
-  @include breakpoint(extra-large) {
+  @include breakpoint(max-extra-large) {
     font-size: 12.9px;
   }
 }

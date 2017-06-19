@@ -1,10 +1,11 @@
 $breakpoints: (
   // max
-  'medium': (max-width: 800px),
-  'extra-large':  ( max-width: 1170px ),
+  'max-medium': (max-width: 800px),
+  'max-large': (max-width: 1000px),
+  'max-extra-large':  ( max-width: 1170px ),
 
   // min
-  'large':  ( min-width: 1000px )
+  'min-large':  ( min-width: 1000px )
 );
 
 @mixin breakpoint($name) {
