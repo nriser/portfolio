@@ -110,3 +110,17 @@
 .sidebar-middle {
   // border: 2px solid red;
 }
+
+// Display only below 'max-medium' breakpoint
+.about-section .hexagon-pic-container {
+  display: none;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.about-section .hexagon-pic-container .profile-pic {
+  transform: none;
+  width: 30vw;
+  height: auto;
+  max-width: none;
+}
