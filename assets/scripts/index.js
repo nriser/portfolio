@@ -7,6 +7,7 @@ $(() => {
   setAPIOrigin(location, config)
   setSmoothScroll()
   highlightNavOnScroll()
+  toggleHamburgerMenuOnClick()
 })
 
 // use require with a reference to bundle the file and use it in this file
@@ -65,3 +66,16 @@ const highlightNavOnScroll = function () {
     }
   })
 }
+
+const toggleHamburgerMenuOnClick = function () {
+  $('#hamburger-icon').on('click', function (event) {
+    event.preventDefault();
+
+    // toggle opening and closing of hamburger menu
+    if ($('.sidebar-hamburger').css('height') === '50px') {
+      $('.sidebar-hamburger').css({'height':'400px'});
+    } else if ($('.sidebar-hamburger').css('height') === '400px') {
+      $('.sidebar-hamburger').css({'height':'50px'});
+    }
+  });
+};

@@ -1,4 +1,5 @@
 @import 'components/navigation';
+@import 'components/hamburger-menu';
 @import 'components/icons';
 
 .sidebar {
@@ -100,4 +101,28 @@
   font-size: .9em;
   margin: 0;
   text-align: center;
+}
+
+
+hamburger menu
+
+.sidebar-hamburger {
+  display: none;
+}
+
+.sidebar-hamburger .hamburger-icon {
+  width: 50px;
+  height: 50px;
+  background-color: pink;
+  display: block;
+  margin-left: auto;
+}
+
+
+.sidebar-bottom {
+  margin-bottom: 50px;
+}
+
+.sidebar-middle {
+  // border: 2px solid red;
 }

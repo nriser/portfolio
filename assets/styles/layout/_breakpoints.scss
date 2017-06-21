@@ -4,9 +4,84 @@
 // Sidebar
 //////////////////
 
+.flex-container-main {
+  @include breakpoint(max-medium) {
+    flex-direction: column;
+    padding-right: 0;
+  }
+}
+
 .sidebar {
   @include breakpoint(min-large) {
     border-right-width: ((.035 * $pic-length) / 100) * 1000px;
+  }
+  @include breakpoint(max-medium) {
+    position: inherit;
+    border-right: 0;
+    border-right-width: 0;
+    height: auto;
+    max-width: none;
+    width: 100%;
+  }
+  @include breakpoint(min-medium) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.sidebar-hamburger {
+  @include breakpoint(max-medium) {
+    display: block;
+    overflow: hidden;
+    height: 50px;
+    transition: height 1s;
+  }
+}
+
+.sidebar-hamburger .icons {
+  @include breakpoint(max-medium) {
+    width: 50%;
+  }
+}
+
+.sidebar-hamburger .hamburger-sidebar-header h1 {
+  @include breakpoint(max-medium) {
+    font-size: 2.3em;
+  }
+}
+
+.sidebar-top {
+  @include breakpoint(max-medium) {
+    // height: 50px;
+    display: none;
+  }
+}
+
+.sidebar-header {
+  @include breakpoint(max-medium) {
+    margin-top: 0px;
+  }
+}
+
+.sidebar-header h1 {
+  @include breakpoint(max-medium) {
+    color: black;
+    padding: 0;
+    bottom: top;
+    left: 0;
+    letter-spacing: initial;
+  }
+}
+
+.sidebar-middle {
+  @include breakpoint(max-medium) {
+    display: none;
+  }
+}
+
+.sidebar-bottom {
+  @include breakpoint(max-medium) {
+    display: none;
   }
 }
 
@@ -22,6 +97,11 @@
   @include breakpoint(min-large) {
     height: ($pic-length / 100) * 1000px;
     width: ($pic-length / 100) * 1000px;
+  }
+  @include breakpoint(max-medium) {
+    height: auto;
+    // position: relative;
+    width: 100%;
   }
 }
 
@@ -60,6 +140,17 @@
 .main-content {
   @include breakpoint(min-large) {
     padding-left: 370px;
+  }
+  @include breakpoint(max-medium) {
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+  }
+}
+
+.about-section {
+  @include breakpoint(max-medium) {
+    margin-top: 60px;
   }
 }
 
