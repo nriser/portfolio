@@ -1,0 +1,113 @@
+// vars
+
+$button-width: 50px;                    // The width of the button area
+$button-height: 50px;                   // The height of the button area
+$bar-thickness: 4px;                    // The thickness of the button bars
+$button-pad: 10px;                      // The left/right padding between button area and bars.
+$button-bar-space: 8px;                 // The spacing between button bars
+$button-transistion-duration: 0.3s;     // The transition duration
+
+
+/* Hamburger icon */
+
+.hamburger-icon {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  margin: 0 0 0 auto;
+  padding: 0;
+  width: $button-width;
+  height: $button-height;
+  box-shadow: none;
+  border-radius: none;
+  border: none;
+  background-color: rgb(178,118,111);
+  transition: background $button-transistion-duration;
+}
+
+.hamburger-icon:focus {
+  outline: none;
+}
+
+// middle bar
+.hamburger-icon span {
+  display: block;
+  position: absolute;
+  top: ($button-height / 2) - ($bar-thickness / 2); // center the bars in the middle vertically
+  left: $button-pad;
+  right: $button-pad;
+  height: $bar-thickness;
+  background: $color-white;
+}
+
+// top and bottom bars, based on middle bar
+.hamburger-icon span::before,
+.hamburger-icon span::after {
+  position: absolute;
+  display: block;
+  left: 0;
+  width: 100%;
+  height: $bar-thickness;
+  background-color: #fff;
+  content: "";
+}
+
+// position the top bar above middle bar
+.hamburger-icon span::before {
+  top: -$bar-thickness - $button-bar-space;
+}
+
+// position the bottom bar below middle bar
+.hamburger-icon span::after {
+  bottom: -$bar-thickness - $button-bar-space;
+}
+
+/* Transitions */
+// Hamburger to "x". Bars slide down to center and transform into an "x".
+
+// transition: background color
+.hamburger-icon span {
+  transition: background 0s $button-transistion-duration;
+}
+
+// transitions for 'top' and 'transform' properties
+.hamburger-icon span::before {
+  transition-property: top, transform;
+}
+
+// transitions for 'bottom' and 'transform' properties
+.hamburger-icon span::after {
+  transition-property: bottom, transform;
+}
+
+// transition duration and delay for top and bottom hamburger bars
+.hamburger-icon span::before,
+.hamburger-icon span::after {
+  transition-duration: $button-transistion-duration, $button-transistion-duration;
+  transition-delay: $button-transistion-duration, 0s;
+}
+
+/* Active state (menu-opened state). Toggling of 'is-active' class is done in index.js. */
+
+.hamburger-icon.is-active {
+  background-color: rgb(138,90,90);
+}
+
+.hamburger-icon.is-active span {
+  background: none;
+}
+
+.hamburger-icon.is-active span::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+
+.hamburger-icon.is-active span::after {
+  bottom: 0;
+  transform: rotate(-45deg);
+}
+
+.hamburger-icon.is-active span::before,
+.hamburger-icon.is-active span::after {
+  transition-delay: 0s, $button-transistion-duration;
+}

@@ -71,11 +71,14 @@ const toggleHamburgerMenuOnClick = function () {
   $('#hamburger-icon').on('click', function (event) {
     event.preventDefault();
 
+    // toggle 'is-active' class to animate hamburger menu icon
+    ($(this).hasClass("is-active") === true) ? $(this).removeClass("is-active") : $(this).addClass("is-active")
+
     // toggle opening and closing of hamburger menu
     if ($('.sidebar-hamburger').css('height') === '50px') {
-      $('.sidebar-hamburger').css({'height':'400px'});
+      $('.sidebar-hamburger').css({'height':'400px'})
     } else if ($('.sidebar-hamburger').css('height') === '400px') {
-      $('.sidebar-hamburger').css({'height':'50px'});
+      $('.sidebar-hamburger').css({'height':'50px'})
     }
-  });
-};
+  })
+}
