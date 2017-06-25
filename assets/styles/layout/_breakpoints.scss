@@ -136,10 +136,10 @@
 .about-intro-quotation {
   @include breakpoint(max-small) {
     width: 200px;
-    top: -65px;
+    top: -64px;
   }
   @include breakpoint(max-xs) {
-    top: -40px;
+    top: -45px;
   }
 }
 
@@ -210,6 +210,8 @@ span.small-font {
 blockquote {
   @include breakpoint(max-small) {
     font-size: 2em;
-    line-height: 1.1em;
+  }
+  @include breakpoint(max-xs) {
+    line-height: 1em;
   }
 }
