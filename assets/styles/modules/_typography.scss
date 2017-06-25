@@ -9,9 +9,9 @@ body {
 }
 
 h1 {
-  font-family: 'Dosis', sans-serif;
+  font-family: 'Josefin Slab', sans-serif;
   font-size: 4em;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 3px;
   line-height: 1.1em;
   margin: 0 0 30px 0;
@@ -23,7 +23,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Dosis', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
   font-weight: 600;
   letter-spacing: 3px;
   color: $heading-color;
@@ -31,10 +31,10 @@ h6 {
 }
 
 h2 {
-  font-family: 'Unica One', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
   margin: 0 0 30px 0;
-  font-size: 2.6em;
-  letter-spacing: 20px;
+  font-size: 2.4em;
+  letter-spacing: 10px;
   font-weight: 700;
   color: $heading-color;
   text-transform: uppercase;
@@ -63,7 +63,7 @@ h6 {
 }
 
 p {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Muli', sans-serif;
   margin: 0 0 1em;
   text-align: justify;
   font-size: 1em;
@@ -71,7 +71,7 @@ p {
 
 a {
   text-transform: uppercase;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
   letter-spacing: 3px;
   font-weight: 500;
 }
@@ -81,7 +81,8 @@ a:link, a:visited, a:hover, a:active {
 }
 
 span.small-font {
-  font-size: .5em;
+  font-size: .55em;
+  font-weight: 600;
 }
 
 .skills .skills-box {
@@ -93,8 +94,16 @@ span.small-font {
 }
 
 .skill-names {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Muli', sans-serif;
   font-weight: 500;
   font-size: .8em;
   text-transform: uppercase;
+}
+
+blockquote {
+  font-family: 'Josefin Sans', sans-serif;
+  letter-spacing: 1px;
+  color: $heading-color;
+  font-size: 2.4em;
+  line-height: 1.4em;
 }
