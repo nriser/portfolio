@@ -44,14 +44,6 @@
   }
 }
 
-.sidebar-hamburger .hamburger-sidebar-header h2 {
-  @include breakpoint(max-medium) {
-    font-size: 2.3em;
-    color: $sidebar-header-color;
-    letter-spacing: 1px;
-  }
-}
-
 .sidebar-top,
 .sidebar-middle,
 .sidebar-bottom {
