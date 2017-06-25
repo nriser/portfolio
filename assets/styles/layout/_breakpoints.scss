@@ -44,43 +44,19 @@
   }
 }
 
-.sidebar-hamburger .hamburger-sidebar-header h1 {
+.sidebar-hamburger .hamburger-sidebar-header h2 {
   @include breakpoint(max-medium) {
     font-size: 2.3em;
+    color: $sidebar-header-color;
+    letter-spacing: 3px;
   }
 }
 
-.sidebar-top {
-  @include breakpoint(max-medium) {
-    // height: 50px;
-    display: none;
-  }
-}
-
-.sidebar-header {
-  @include breakpoint(max-medium) {
-    margin-top: 0px;
-  }
-}
-
-.sidebar-header h1 {
-  @include breakpoint(max-medium) {
-    color: black;
-    padding: 0;
-    bottom: top;
-    left: 0;
-    letter-spacing: initial;
-  }
-}
-
-.sidebar-middle {
-  @include breakpoint(max-medium) {
-    display: none;
-  }
-}
-
+.sidebar-top,
+.sidebar-middle,
 .sidebar-bottom {
   @include breakpoint(max-medium) {
+    // height: 50px;
     display: none;
   }
 }
