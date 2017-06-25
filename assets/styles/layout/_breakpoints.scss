@@ -142,33 +142,31 @@
 }
 
 .about-intro-quotation {
-  @include breakpoint(max-extra-large) {
-    width: 600px;
-    top: 0%;
+  @include breakpoint(max-small) {
+    width: 200px;
+    top: -65px;
   }
-  @include breakpoint(max-large) {
-    width: 300px;
-    text-align: center;
+  @include breakpoint(max-xs) {
+    top: -40px;
   }
 }
 
 .about-intro-quotation::before {
-  @include breakpoint(max-extra-large) {
-    font-size: 150px;
+  @include breakpoint(max-small) {
+    font-size: 17em;
   }
-  @include breakpoint(max-large) {
-    top: -50px;
-    font-size: 250px
+  @include breakpoint(max-xs) {
+    font-size: 15em;
   }
 }
 
 .about-intro-quotation::after {
-  @include breakpoint(max-extra-large) {
-    font-size: 150px;
+  @include breakpoint(max-small) {
+    font-size: 17em;
+    // top: -165%;
   }
-  @include breakpoint(max-large) {
-    top: -50px;
-    font-size: 250px;
+  @include breakpoint(max-xs) {
+    font-size: 15em;
   }
 }
 
@@ -208,5 +206,18 @@
 body {
   @include breakpoint(max-extra-large) {
     font-size: 12.9px;
+  }
+}
+
+span.small-font {
+  @include breakpoint(max-small) {
+    // font-size: inherit;
+  }
+}
+
+blockquote {
+  @include breakpoint(max-small) {
+    font-size: 2em;
+    line-height: 1.1em;
   }
 }

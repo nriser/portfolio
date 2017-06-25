@@ -1,5 +1,7 @@
 $breakpoints: (
   // max
+  'max-xs': (max-width: 400px),
+  'max-small': (max-width: 500px),
   'max-medium': (max-width: 800px),
   'max-large': (max-width: 1000px),
   'max-extra-large':  ( max-width: 1170px ),

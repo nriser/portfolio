@@ -19,10 +19,10 @@
 }
 
 .about-intro-quotation {
-  width: 750px;
+  width: 330px;
   height: 100%;
   position: absolute;
-  top: 0%;
+  top: -101%;
   left: 50%;
   transform: translateX(-50%);
   z-index: -1;
@@ -30,12 +30,12 @@
 
 .about-intro-quotation::before {
   content: "\201C";
-  color: $quotation-color;
+  color: #eeeeee;
   font-family: Georgia;
-  font-size: 200px;
+  font-size: 24em;
   position: absolute;
-  top: -70%;
-  left: 0px;
+  top: 0;
+  left: 0;
   z-index: -1;
 }
 
@@ -43,9 +43,9 @@
   content: "\201D";
   color: $quotation-color;
   font-family: Georgia;
-  font-size: 200px;
+  font-size: 24em;
   position: absolute;
-  top: 15%;
+  top: -0%;
   right: 0px;
   z-index: -1;
 }
