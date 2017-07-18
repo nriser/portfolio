@@ -19,7 +19,6 @@ require('./example')
 const setSmoothScroll = function () {
   // Target all a tags inside .sidebar-middle and .sidebar-hamburger, and apply smooth scrolling.
   $('.sidebar-middle a, .sidebar-hamburger a').click(function (event) {
-    event.preventDefault();
     $('html,body').animate({
       scrollTop: $(this.hash).offset().top
     }, 1000)
